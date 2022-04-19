@@ -1,10 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {Button, StyleSheet, Text, View} from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+        <View style={styles.ustComp}>
+            <Text>Selami Aleykim Dayunun</Text>
+        </View>
+        <View style={styles.altComp}>
+            <Text>Selami Aleykim asdas</Text>
+        </View>
       <StatusBar style="auto" />
     </View>
   );
@@ -13,8 +18,15 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+      marginTop:50
   },
+
+    ustComp:{
+      flex:100,
+        backgroundColor:'red',
+    },
+    altComp:{
+        flex:200,
+        backgroundColor: "#4b2424",
+    },
 });
